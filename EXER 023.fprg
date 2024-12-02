@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 04:11:19 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAyLTA1OyIwMjowMDoyNiAiOzI4OTI="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAyLTA1OyIwNDoxMToxOSAiOzI7MzAwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, media, percfaltas" type="Real" array="False" size=""/>
+            <declare name="faltas, aulas" type="Integer" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <assign variable="aulas" expression="100"/>
+            <input variable="nome"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="faltas"/>
+            <declare name="presen&#231;a" type="Real" array="False" size=""/>
+            <assign variable="media" expression="media(nota1,nota2,nota3)"/>
+            <output expression="&quot;ol&#225; &quot; &amp; nome" newline="True"/>
+            <assign variable="percfaltas" expression="percfaltas(faltas,aulas)"/>
+            <output expression="&quot;sua frequencia de faltas foi &quot; &amp; percfaltas &amp; &quot;%&quot;" newline="True"/>
+            <output expression="&quot;a sua media foi de &quot; &amp; media" newline="True"/>
+            <if expression="faltas&lt;=0.25">
+                <then>
+                    <output expression="&quot;voc&#234; foi retido por faltas&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media&gt;=7">
+                        <then>
+                            <output expression="&quot;voc&#234; passou de ano&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;voc&#234; foi retido&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="percfaltas" type="Real" variable="percfaltas">
+        <parameters>
+            <parameter name="faltas" type="Integer" array="False"/>
+            <parameter name="aulas" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="percfaltas" type="Real" array="False" size=""/>
+            <assign variable="percfaltas" expression="faltas/aulas"/>
+        </body>
+    </function>
+    <function name="media" type="Real" variable="media">
+        <parameters>
+            <parameter name="nota1" type="Real" array="False"/>
+            <parameter name="nota2" type="Integer" array="False"/>
+            <parameter name="nota3" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="(nota1*2+nota2*3+nota3*5)/10"/>
+        </body>
+    </function>
+</flowgorithm>

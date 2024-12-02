@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 04:45:28 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMjQ7IjAzOjAzOjAzICI7MzY2NA=="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMzE7IjA0OjQ1OjI4ICI7NDszNzg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, DELTA, X1, X2" type="Real" array="False" size=""/>
+            <declare name="MENSAGE" type="String" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <assign variable="DELTA" expression="DELTA(A,B,C)"/>
+            <if expression="DELTA&gt;=0">
+                <then>
+                    <call expression="RAIZ(A,B,C,DELTA)"/>
+                </then>
+                <else>
+                    <assign variable="MENSAGE" expression="&quot;TENTE NOVAMENTE&quot;"/>
+                    <output expression="MENSAGE" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="DELTA" type="Real" variable="DELTA">
+        <parameters>
+            <parameter name="A" type="Real" array="False"/>
+            <parameter name="B" type="Real" array="False"/>
+            <parameter name="C" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="DELTA" type="Real" array="False" size=""/>
+            <assign variable="DELTA" expression="B^2-4*a*c"/>
+            <output expression="DELTA" newline="True"/>
+        </body>
+    </function>
+    <function name="RAIZ" type="None" variable="">
+        <parameters>
+            <parameter name="A" type="Real" array="False"/>
+            <parameter name="B" type="Real" array="False"/>
+            <parameter name="DELTA" type="Real" array="False"/>
+            <parameter name="C" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="X1, X2" type="Real" array="False" size=""/>
+            <assign variable="X1" expression="(-B+DELTA^(1/2))/(2*A)"/>
+            <assign variable="X2" expression="(-B-DELTA^(1/2))/(2*A)"/>
+            <output expression="&quot;AS RAIZES DA CHAMADA &quot; &amp; A&amp;&quot;X^2 + &quot; &amp;B &amp;&quot;X + &quot;&amp;C &amp;&quot; = 0 S&#195;O X1= &quot;&amp; X1 &amp; &quot; E X2 = &quot; &amp; X2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

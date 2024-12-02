@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-19 04:15:35 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAyLTE5OyIwNDowODozOSAiOzI5MTE="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAyLTE5OyIwNDoxNTozNSAiOzE7MzAxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arq, reg" type="String" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="arq" expression="&quot;teste2.txt&quot;"/>
+            <open expression="arq" mode="write"/>
+            <assign variable="reg" expression="&quot;id,nome,salario,diastrab,inss,bcir,ir,vt,vr,salliq&quot;"/>
+            <write expression="reg"/>
+            <close mode="write"/>
+        </body>
+    </function>
+</flowgorithm>

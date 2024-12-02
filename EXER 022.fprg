@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 02:33:43 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAyLTA1OyIwMjowMDoyNiAiOzI4OTI="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAyLTA1OyIwMjozMzo0MyAiOzE7MzAwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, media, faltas" type="Real" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="faltas"/>
+            <assign variable="faltas" expression="100 - faltas"/>
+            <assign variable="media" expression="((nota1*2)+(nota2*3)+(nota3*5))/10"/>
+            <output expression="&quot;ol&#225; &quot; &amp; nome" newline="True"/>
+            <output expression="&quot;sua frequencia de faltas foi &quot; &amp; faltas &amp; &quot;%&quot;" newline="True"/>
+            <output expression="&quot;a sua media foi de &quot; &amp; media" newline="True"/>
+            <if expression="faltas&lt;75">
+                <then>
+                    <output expression="&quot;voc&#234; foi retido por faltas&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media&gt;=7">
+                        <then>
+                            <output expression="&quot;voc&#234; passou de ano&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;voc&#234; foi retido&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

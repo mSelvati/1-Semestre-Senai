@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-14 05:12:39 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDItMTQ7IjA0OjU0OjIyICI7Mjc1OQ=="/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDItMTQ7IjA1OjEyOjM5ICI7MTsyODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="an" type="Real" array="True" size="10"/>
+            <declare name="i, soma, media, maior, menor" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <assign variable="media" expression="0"/>
+            <assign variable="an[0]" expression="13"/>
+            <assign variable="an[1]" expression="20"/>
+            <assign variable="an[2]" expression="45"/>
+            <assign variable="an[3]" expression="60"/>
+            <assign variable="an[4]" expression="80"/>
+            <assign variable="an[5]" expression="91"/>
+            <assign variable="an[6]" expression="10"/>
+            <assign variable="an[7]" expression="12"/>
+            <assign variable="an[8]" expression="21"/>
+            <assign variable="an[9]" expression="48"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <assign variable="soma" expression="soma + an[i]"/>
+            </for>
+            <assign variable="media" expression="soma/10"/>
+            <assign variable="maior" expression="1"/>
+            <assign variable="menor" expression="1"/>
+            <output expression="&quot;|soma = &quot; &amp; soma &amp;&#13;&#10;&quot;|media = &quot; &amp; media &amp;&#13;&#10;&quot;|maior = &quot; &amp; maior &amp;&#13;&#10;&quot;|menor = &quot;&amp; menor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

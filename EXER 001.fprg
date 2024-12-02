@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-24 02:48:35 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMjQ7IjAyOjM2OjE0ICI7MzY3MQ=="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMjQ7IjAyOjQ4OjM1ICI7MTszNzg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, SOMA" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <assign variable="SOMA" expression="A+B+C"/>
+            <output expression="SOMA" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

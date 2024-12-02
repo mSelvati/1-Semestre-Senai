@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 03:55:14 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMjk7IjAyOjU0OjQwICI7MzY3NQ=="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMjk7IjAzOjU1OjE0ICI7MjszNzg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="INDICE, PESO, ALTURA" type="Real" array="False" size=""/>
+            <declare name="CLASSE" type="String" array="False" size=""/>
+            <input variable="PESO"/>
+            <input variable="ALTURA"/>
+            <assign variable="INDICE" expression="PESO/(ALTURA^2)"/>
+            <output expression="INDICE" newline="True"/>
+            <if expression="INDICE &lt; 18.5">
+                <then>
+                    <assign variable="CLASSE" expression="&quot;MAGREZA&quot;"/>
+                    <output expression="CLASSE" newline="True"/>
+                </then>
+                <else>
+                    <if expression="INDICE&gt;18.5">
+                        <then>
+                            <assign variable="CLASSE" expression="&quot;NORMAL&quot;"/>
+                            <output expression="CLASSE" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="INDICE&gt;24.9">
+                                <then>
+                                    <assign variable="CLASSE" expression="&quot;SOBREPESO&quot;"/>
+                                    <output expression="CLASSE" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="INDICE &gt; 29.9">
+                                        <then>
+                                            <assign variable="CLASSE" expression="&quot;OBESIDADE&quot;"/>
+                                            <output expression="CLASSE" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="INDICE&gt;39.9">
+                                                <then>
+                                                    <assign variable="CLASSE" expression="&quot;OBESIDADEGRAVE&quot;"/>
+                                                    <output expression="CLASSE" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

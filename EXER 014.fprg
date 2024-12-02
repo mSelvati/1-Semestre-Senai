@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 03:01:26 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMjk7IjAyOjU0OjQwICI7MzY3NQ=="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMjk7IjAzOjAxOjI2ICI7MTszNzgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="INDCE, PESO, ALTURA" type="Real" array="False" size=""/>
+            <input variable="PESO"/>
+            <input variable="ALTURA"/>
+            <assign variable="INDCE" expression="PESO/(ALTURA^2)"/>
+            <output expression="INDCE" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

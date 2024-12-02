@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 02:59:33 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMzE7IjAyOjM0OjM4ICI7MzY3Mw=="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMzE7IjAyOjU5OjMzICI7MjszNzg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Integer" array="False" size=""/>
+            <for variable="A" start="2" end="9" direction="inc" step="1">
+                <for variable="B" start="1" end="10" direction="inc" step="1">
+                    <assign variable="C" expression="A*B"/>
+                    <output expression="A &amp; &quot; X &quot; &amp; B &amp; &quot; = &quot; &amp; C" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+    <function name="B" type="Integer" variable="B">
+        <parameters>
+            <parameter name="MULTIPLICA&#199;&#195;O" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="B" type="Integer" array="False" size=""/>
+        </body>
+    </function>
+</flowgorithm>

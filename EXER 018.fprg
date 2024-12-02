@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 02:22:03 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMzE7IjAxOjU3OjIyICI7MzY3MA=="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMzE7IjAyOjIyOjAzICI7MTszNzcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <assign variable="C" expression="A+B"/>
+            <output expression="&quot;a soma de &quot; &amp; A &amp; &quot; com &quot; &amp; B &amp; &quot; &#233; igual a &quot; &amp; C" newline="True"/>
+        </body>
+    </function>
+    <function name="SOMA" type="Integer" variable="SOMA">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+            <parameter name="B" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="SOMA" type="Integer" array="False" size=""/>
+            <assign variable="SOMA" expression="A+B"/>
+        </body>
+    </function>
+</flowgorithm>

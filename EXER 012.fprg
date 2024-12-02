@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 02:30:46 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMjk7IjAxOjU3OjE4ICI7MzY4Mg=="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMjk7IjAyOjMwOjQ2ICI7MzszNzg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="1"/>
+            <while expression="b&lt;=100">
+                <if expression="b % 13 == 0">
+                    <then>
+                        <output expression="b" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="b" expression="b+1"/>
+            </while>
+            <for variable="a" start="1" end="100" direction="inc" step="1&#13;&#10;&#13;&#10;">
+                <if expression="a%2!=0">
+                    <then>
+                        <if expression="a%3==0">
+                            <then>
+                                <output expression="a" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

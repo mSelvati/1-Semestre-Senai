@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 04:33:01 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMjk7IjA0OjE2OjMxICI7MzY3NQ=="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7REVTS1RPUC1JUDdCMjJPOzIwMjQtMDEtMjk7IjA0OjMzOjAxICI7MTszNzc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ANO, MES, DIA, IDADE" type="Integer" array="False" size=""/>
+            <declare name="NOME" type="String" array="False" size=""/>
+            <input variable="NOME"/>
+            <input variable="ANO"/>
+            <input variable="MES"/>
+            <input variable="DIA"/>
+            <assign variable="IDADE" expression="2024-ANO"/>
+            <output expression="NOME" newline="True"/>
+            <output expression="IDADE" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

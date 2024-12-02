@@ -1,1 +1,2 @@
-# 1-Semestre-Senai
+# algoritmos
+exemplos de algoritmos em flowgorithm
